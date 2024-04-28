@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Patient Details</h1>
+        <table class="table mt-3">
+            <tbody>
+                <tr>
+                    <th scope="row">Full Name</th>
+                    <td>{{.fullName}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">CPF</th>
+                    <td>{{.cpf}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Phone Number</th>
+                    <td>{{.phoneNumber}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Anamnesis</th>
+                    <td>{{.anamnesis}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/patients" class="btn btn-primary">Back to Patients List</a>
+    </div>
+</body>
+</html>
